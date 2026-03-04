@@ -1,0 +1,49 @@
+# Qt specific
+*.pro.user
+*.pro.user.*
+*.autosave
+*.m4
+qmake.stash
+qmake_*.mak
+*.mak
+Makefile*
+*.o
+*.obj
+*.exe
+*.dll
+*.dll.a
+*.dll.lib
+*.lib
+
+# Build directories
+build/
+Debug/
+Release/
+debug/
+release/
+*_debug.dll
+*_release.dll
+
+# IDE
+.vs/
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Logs
+*.log
+*.tmp
+
+# Temporary files
+*.autosave
+*.bak
+*.cache
+
+# Office temp files
+~$*
+*.docx
+*.xlsx
+*.pptx
