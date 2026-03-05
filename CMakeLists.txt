@@ -33,11 +33,20 @@ set(SOURCES
     src/main.cpp
     src/UI/MainWindow.cpp
     src/Config/Logger.cpp
+    src/Config/JsonLoader.cpp
+    src/Config/ConfigManager.cpp
+    src/Config/Validator.cpp
+    src/Config/SensitivityImporter.cpp
 )
 
 set(HEADERS
     include/UI/MainWindow.h
     include/Config/Logger.h
+    include/Config/ProbeConfig.h
+    include/Config/JsonLoader.h
+    include/Config/ConfigManager.h
+    include/Config/Validator.h
+    include/Config/SensitivityImporter.h
 )
 
 # Main executable

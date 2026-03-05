@@ -1,0 +1,12 @@
+# Sensitivity list for L7-4 probe
+# One value per line, in dB
+-45.0
+-44.5
+-44.2
+-43.8
+-43.5
+-44.0
+-44.3
+-45.1
+-45.5
+-44.8

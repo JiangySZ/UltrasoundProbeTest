@@ -1,0 +1,10 @@
+{
+  "waveform": {
+    "name": "Default Pulse",
+    "type": "pulser",
+    "txVoltage": 50.0,
+    "frequency": 3.5,
+    "cycles": 3,
+    "points": []
+  }
+}

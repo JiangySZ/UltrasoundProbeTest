@@ -1,0 +1,38 @@
+{
+  "probe": {
+    "id": "PROBE-001",
+    "model": "L7-4",
+    "type": "linear",
+    "elements": 128,
+    "frequency": 4.0
+  },
+  "test": {
+    "startDepth": 20.0,
+    "adcRatio": 0.001,
+    "excludeElements": [0, 127],
+    "calibrationElements": [32, 64, 96]
+  },
+  "thresholds": {
+    "sensitivity": {
+      "nominal": -45.0,
+      "tolerance": 6.0
+    },
+    "centerFrequency": {
+      "nominal": 4.0,
+      "tolerance": 0.5
+    },
+    "bandwidth6dB": {
+      "nominal": 60.0,
+      "tolerance": 15.0
+    },
+    "bandwidth20dB": {
+      "nominal": 80.0,
+      "tolerance": 10.0
+    },
+    "pulseLength20dB": {
+      "nominal": 500.0,
+      "tolerance": 150.0
+    }
+  },
+  "sensitivityList": "config/SensitivityList.txt"
+}
