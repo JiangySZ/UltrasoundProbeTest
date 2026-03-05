@@ -45,21 +45,21 @@
 
 ### 2.6 单元测试
 
-- [ ] 2.6.1 编写ConfigManager测试
+- [x] 2.6.1 编写ConfigManager测试
   - testLoadValidProbeConfig
   - testLoadInvalidJson
-- [ ] 2.6.2 编写Validator测试
+- [x] 2.6.2 编写Validator测试
   - testValidateMissingField
   - testValidateOutOfRange
-- [ ] 2.6.3 编写SensitivityImporter测试
+- [x] 2.6.3 编写SensitivityImporter测试
   - testImportValidFile
   - testImportInvalidFormat
-- [ ] 2.6.4 运行单元测试验证
+- [x] 2.6.4 运行单元测试验证
 
 ## 验收标准
 
 - [x] ConfigManager可正确加载JSON配置
 - [x] Validator可验证配置并返回错误
 - [x] SensitivityImporter可导入TXT灵敏度列表
-- [ ] 所有单元测试通过
+- [x] 所有单元测试通过
 - [x] 配置文件格式符合schema定义

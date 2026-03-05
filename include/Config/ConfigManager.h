@@ -2,6 +2,7 @@
 #define CONFIG_MANAGER_H
 
 #include <QString>
+#include <QJsonObject>
 #include "Config/ProbeConfig.h"
 
 class ConfigManager
