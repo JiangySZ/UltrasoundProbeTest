@@ -1,0 +1,13 @@
+{
+  "application": {
+    "name": "UltrasoundProbeTest",
+    "version": "1.0.0",
+    "description": "超声探头自动化测试与校准软件"
+  },
+  "logging": {
+    "level": "Info",
+    "file": "app.log",
+    "maxSize": 10485760,
+    "maxFiles": 5
+  }
+}
