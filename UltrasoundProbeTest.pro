@@ -26,7 +26,11 @@ SOURCES += \
     src/Config/SensitivityImporter.cpp \
     src/HAL/HardwareInterface.cpp \
     src/HAL/MockHardwareDriver.cpp \
-    src/HAL/HardwareFactory.cpp
+    src/HAL/HardwareFactory.cpp \
+    src/Business/PortScanner.cpp \
+    src/Business/ProbeReader.cpp \
+    src/Business/ProbeManager.cpp \
+    src/Business/ScriptLoader.cpp
 
 # Header files
 HEADERS += \
@@ -39,7 +43,11 @@ HEADERS += \
     include/Config/SensitivityImporter.h \
     include/HAL/HardwareInterface.h \
     include/HAL/MockHardwareDriver.h \
-    include/HAL/HardwareFactory.h
+    include/HAL/HardwareFactory.h \
+    include/Business/PortScanner.h \
+    include/Business/ProbeReader.h \
+    include/Business/ProbeManager.h \
+    include/Business/ScriptLoader.h
 
 # Default rules for deployment
 qnx: target.path = /tmp/$${TARGET}/bin
