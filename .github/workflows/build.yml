@@ -1,0 +1,42 @@
+name: Build and Test
+
+on:
+  push:
+    branches: [master]
+  pull_request:
+    branches: [master]
+
+jobs:
+  build:
+    runs-on: windows-latest
+    
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v4
+    
+    - name: Setup Qt
+      uses: jurplel/setup-qt@v6
+      with:
+        version: '5.9.1'
+        arch: 'win64_msvc2017_64'
+    
+    - name: Set up MSVC
+      uses: ilammy/msvc-dev-cmd@v1
+    
+    - name: Configure Qt
+      run: |
+        qmake -version
+        qmake UltrasoundProbeTest.pro -spec win32-msvc CONFIG+=release
+    
+    - name: Build
+      run: nmake
+    
+    - name: Build tests
+      working-directory: tests
+      run: |
+        qmake tests.pro -spec win32-msvc CONFIG+=debug
+        nmake
+    
+    - name: Run tests
+      working-directory: tests/debug
+      run: ./run_tests.exe
