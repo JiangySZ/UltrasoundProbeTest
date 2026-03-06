@@ -1,0 +1,15 @@
+{
+    "mode": "mock",
+    "description": "Hardware mode configuration",
+    "options": {
+        "mock": {
+            "waveformType": "sine",
+            "noiseLevel": 0.1,
+            "sampleRate": 40000000
+        },
+        "real": {
+            "dllPath": "",
+            "deviceId": ""
+        }
+    }
+}

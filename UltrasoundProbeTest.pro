@@ -23,7 +23,10 @@ SOURCES += \
     src/Config/JsonLoader.cpp \
     src/Config/ConfigManager.cpp \
     src/Config/Validator.cpp \
-    src/Config/SensitivityImporter.cpp
+    src/Config/SensitivityImporter.cpp \
+    src/HAL/HardwareInterface.cpp \
+    src/HAL/MockHardwareDriver.cpp \
+    src/HAL/HardwareFactory.cpp
 
 # Header files
 HEADERS += \
@@ -33,7 +36,10 @@ HEADERS += \
     include/Config/JsonLoader.h \
     include/Config/ConfigManager.h \
     include/Config/Validator.h \
-    include/Config/SensitivityImporter.h
+    include/Config/SensitivityImporter.h \
+    include/HAL/HardwareInterface.h \
+    include/HAL/MockHardwareDriver.h \
+    include/HAL/HardwareFactory.h
 
 # Default rules for deployment
 qnx: target.path = /tmp/$${TARGET}/bin

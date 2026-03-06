@@ -1,7 +1,7 @@
 QT += core testlib
 
 CONFIG += testcase
-CONFIG -= app_bundle
+CONFIG += moc
 
 TARGET = run_tests
 TEMPLATE = app
@@ -12,13 +12,23 @@ INCLUDEPATH += C:/Qt/Qt5.9.1/5.9.1/msvc2017_64/include
 INCLUDEPATH += C:/Qt/Qt5.9.1/5.9.1/msvc2017_64/include/QtCore
 INCLUDEPATH += C:/Qt/Qt5.9.1/5.9.1/msvc2017_64/include/QtTest
 
-SOURCES += test_configmanager.cpp
-HEADERS += test_configmanager.h
+LIBS += -LC:/Qt/Qt5.9.1/5.9.1/msvc2017_64/lib
+LIBS += -lQt5Core
+LIBS += -lQt5Test
 
+HEADERS += test_mockhardware.h
+HEADERS += ../include/HAL/HardwareInterface.h
+HEADERS += ../include/HAL/MockHardwareDriver.h
+HEADERS += ../include/HAL/HardwareFactory.h
+
+SOURCES += test_mockhardware.cpp
 SOURCES += ../src/Config/ConfigManager.cpp
 SOURCES += ../src/Config/Validator.cpp
 SOURCES += ../src/Config/SensitivityImporter.cpp
 SOURCES += ../src/Config/JsonLoader.cpp
+SOURCES += ../src/HAL/HardwareInterface.cpp
+SOURCES += ../src/HAL/MockHardwareDriver.cpp
+SOURCES += ../src/HAL/HardwareFactory.cpp
 
 DEFINES += SRCDIR=\\\"$$PWD/../config\\\"
 
